@@ -1,0 +1,2 @@
+hello hello hello
+this is a simple huffman compressor

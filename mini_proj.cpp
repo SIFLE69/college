@@ -14,7 +14,7 @@ struct Block {
         : blockNumber(n), sender(s), receiver(r), amount(a),
           description(d), previousHash(prev), next(nullptr) {}
 };
-
+// The DJB2 / Polynomial Rolling Hash Loop
 string calculateHash(Block* b) {
     string data = to_string(b->blockNumber) + b->sender + b->receiver +
                   to_string(b->amount) + b->description + b->previousHash;
